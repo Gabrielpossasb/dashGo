@@ -4,7 +4,6 @@ import { Input } from "../components/Form/Input";
 import { SubmitHandler, useForm } from "react-hook-form";
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup'
-import Link from "next/link";
 import { useRouter } from "next/router";
 
 type SignInFormData = {
@@ -18,11 +17,10 @@ const signInFormSchema = yup.object().shape({
 })
 
 export default function Home() {
-	const { register, handleSubmit, formState } = useForm({
+	const { register, handleSubmit, formState: {errors, isSubmitting} } = useForm({
 		resolver: yupResolver(signInFormSchema)
 	})
 
-	const {errors} = formState;
 
 	const { push } = useRouter()
 
@@ -55,7 +53,7 @@ export default function Home() {
 				</Stack>
 				
 				
-					<Button type="submit" mt='6' colorScheme='pink' size='lg' isLoading={formState.isSubmitting}>Entrar</Button>
+					<Button type="submit" mt='6' colorScheme='pink' size='lg' isLoading={isSubmitting}>Entrar</Button>
 				
 			</Flex>
 		</Flex>
