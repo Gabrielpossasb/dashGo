@@ -2,7 +2,7 @@
   "name": "dashgo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gabrielpossasb.github.io/dashGo/",
+  "homepage": "https://gabrielpossasb.github.io/dashGo",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
