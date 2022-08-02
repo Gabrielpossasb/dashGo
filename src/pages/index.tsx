@@ -53,7 +53,7 @@ export default function Home() {
 				</Stack>
 				
 				
-					<Button type="submit" mt='6' colorScheme='pink' size='lg' isLoading={isSubmitting}>Entrar</Button>
+					<Button type="submit" mt='6' colorScheme='pink' size='lg' isLoading={isSubmitting}>ENTRAR</Button>
 				
 			</Flex>
 		</Flex>
