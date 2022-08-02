@@ -23,7 +23,6 @@ export default function Home() {
 	})
 
 	const {errors} = formState;
-	console.log(errors)
 
 	const { push } = useRouter()
 

@@ -34,7 +34,6 @@ export default function CreateUser() {
    const handleCreateUser: SubmitHandler<CreteUserFormData> = async (val) => {
 		await new Promise(resolve => setTimeout(resolve, 2000));
 		
-      console.log(val)
 	}
 
    return(
