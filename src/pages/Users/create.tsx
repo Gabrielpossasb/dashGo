@@ -25,11 +25,9 @@ const CreateUserFormSchema = yup.object().shape({
 })
 
 export default function CreateUser() {
-   const { register, handleSubmit, formState } = useForm({
+   const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm({
 		resolver: yupResolver(CreateUserFormSchema)
 	})
-
-	const {errors} = formState;
 
    const handleCreateUser: SubmitHandler<CreteUserFormData> = async (val) => {
 		await new Promise(resolve => setTimeout(resolve, 2000));
@@ -65,7 +63,7 @@ export default function CreateUser() {
                      <Link href='/users' passHref>
                         <Button colorScheme='whiteAlpha'>Cancelar</Button>
                      </Link>
-                     <Button type='submit' colorScheme='pink' isLoading={formState.isSubmitting}>Salvar</Button>
+                     <Button type='submit' colorScheme='pink' isLoading={isSubmitting}>Salvar</Button>
                   </HStack>
                </Flex>
             </Box>
