@@ -48,13 +48,13 @@ export default function CreateUser() {
 
                <VStack spacing='8'>
                   <SimpleGrid minChildWidth='240px' spacing={['6','8']} w='100%'>
-                     <Input name='name' label='Nome completo' error={errors.name} {...register('name')}></Input>
-                     <Input name='E-mail' type='email' label='E-mail' error={errors.email} {...register('email')}></Input>
+                     <Input name='name' label='Nome completo' errors={errors.name} {...register('name')}></Input>
+                     <Input name='E-mail' type='email' label='E-mail' errors={errors.email} {...register('email')}></Input>
                   </SimpleGrid>
 
                   <SimpleGrid minChildWidth='240px' spacing={['6','8']} w='100%'>
-                     <Input name='password' type='password' label='Senha' error={errors.password} {...register('password')}></Input>
-                     <Input name='password_confirmation' type='password' label='Confirmação de senha' error={errors.password_confirmation} {...register('password_confirmation')}></Input>
+                     <Input name='password' type='password' label='Senha' errors={errors.password} {...register('password')}></Input>
+                     <Input name='password_confirmation' type='password' label='Confirmação de senha' errors={errors.password_confirmation} {...register('password_confirmation')}></Input>
                   </SimpleGrid>
                </VStack>
 

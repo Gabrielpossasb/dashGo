@@ -49,8 +49,8 @@ export default function Home() {
 				onSubmit={handleSubmit(handleSignIn)}
 			>
 				<Stack spacing='4'>
-					<Input name="email" type='email' label="E-mail" error={errors.email} {...register('email')}/>
-					<Input name="password" type='password' label="Senha" error={errors.password} {...register('password')}/>
+					<Input name="email" type='email' label="E-mail" errors={errors.email} {...register('email')}/>
+					<Input name="password" type='password' label="Senha" errors={errors.password} {...register('password')}/>
 				</Stack>
 				
 					<Link href={'/dashboard'}>
