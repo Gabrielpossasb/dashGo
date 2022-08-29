@@ -5,6 +5,7 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup'
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 type SignInFormData = {
 	email: string;
@@ -52,9 +53,9 @@ export default function Home() {
 					<Input name="password" type='password' label="Senha" error={errors.password} {...register('password')}/>
 				</Stack>
 				
-				
-					<Button type="submit" mt='6' colorScheme='pink' size='lg' isLoading={isSubmitting}>ENTRAR</Button>
-				
+					<Link href={'/dashboard'}>
+						<Button type="submit" mt='6' colorScheme='pink' size='lg' isLoading={isSubmitting}>ENTRAR</Button>
+					</Link>
 			</Flex>
 		</Flex>
 	)
