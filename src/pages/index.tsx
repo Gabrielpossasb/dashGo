@@ -53,9 +53,7 @@ export default function Home() {
 					<Input name="password" type='password' label="Senha" errors={errors.password} {...register('password')}/>
 				</Stack>
 				
-					<Link href={'/dashboard'}>
-						<Button type="submit" mt='6' colorScheme='pink' size='lg' isLoading={isSubmitting}>ENTRAR</Button>
-					</Link>
+				<Button type="submit" mt='6' colorScheme='pink' size='lg' isLoading={isSubmitting}>ENTRAR</Button>
 			</Flex>
 		</Flex>
 	)
