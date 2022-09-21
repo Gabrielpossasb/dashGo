@@ -52,8 +52,10 @@ export default function Home() {
 					<Input name="email" type='email' label="E-mail" errors={errors.email} {...register('email')}/>
 					<Input name="password" type='password' label="Senha" errors={errors.password} {...register('password')}/>
 				</Stack>
-				
-				<Button type="submit" mt='6' colorScheme='pink' size='lg' isLoading={isSubmitting}>ENTRAR</Button>
+
+				<Link href={'/dashboard'}>
+					<Button type="submit" mt='6' colorScheme='pink' size='lg' isLoading={isSubmitting}>ENTRAR</Button>
+				</Link>
 			</Flex>
 		</Flex>
 	)
