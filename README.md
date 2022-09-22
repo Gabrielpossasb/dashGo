@@ -4,7 +4,7 @@
    
    # dasgGO.
       
-   #### Meu portfólio, com funcionalidade de themas feita com React  ####
+   #### Aplicação responsiva com ChackraUI  ####
 
    :link: <https://dash-go-ecru.vercel.app/> :link:
 </div>
