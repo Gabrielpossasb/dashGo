@@ -21,3 +21,4 @@
 - ChackrUI
 - Mirage
 - Axios
+- ReactQuery
