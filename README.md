@@ -22,3 +22,6 @@
 - Mirage
 - Axios
 - ReactQuery
+- ReactHookForm
+- Faker
+- yup
