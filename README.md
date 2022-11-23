@@ -13,15 +13,16 @@
 
 - Next
 - Vercel
+- Figma
 
 ## :rocket: Bibliotecas :
 
 - React
 - TypeScript
-- ChackrUI
+- ChackraUI
 - Mirage
 - Axios
 - ReactQuery
 - ReactHookForm
 - Faker
-- yup
+- Yup
